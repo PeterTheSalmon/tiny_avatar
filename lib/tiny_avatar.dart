@@ -46,9 +46,12 @@ class TinyAvatar extends StatelessWidget {
     required this.dimension,
     this.circular,
     this.borderRadius,
-  }) : assert(
+  })  : assert(
           circular == null || borderRadius == null,
           "Can't have both circular border radius and and set border radius",
+        ),
+        assert(
+          customColours == null || customColours.length >= 3,
         );
 
   @override
