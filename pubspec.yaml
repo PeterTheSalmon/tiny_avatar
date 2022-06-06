@@ -1,7 +1,7 @@
 name: tiny_avatar
 description: Simple, generated avatars for your Flutter app. Inspired https://tinygraphs.com
 version: 0.0.1
-homepage: https://petersalmon.dev
+homepage: https://github.com/PeterTheSalmon/tiny_avatar
 
 environment:
   sdk: ">=2.17.1 <3.0.0"
@@ -16,6 +16,4 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^2.0.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
 flutter:
