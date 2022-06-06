@@ -1,39 +1,80 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+A simple way to generate and display pseudo-random avatars for your users. Inspired by https://www.tinygraphs.com/
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Install the package:
+
+`flutter pub add tiny_avatar`
+
+Import it into your project:
+```dart
+import 'package:tiny_avatar/tiny_avatar.dart';
+```
+
+## Features
+
+- Generate unique avatars from a single string
+- Customize colour, shape, and size with ease
+- Avatars are consistent - the same string always leads to the same result
+- Complete documentation
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+```dart
+TinyAvatar(
+    baseString: 'John',
+    dimension: 150,
+);
+```
+
+![image](https://i.imgur.com/Mga9jmv.png)
+
+
+## Customization
 
 ```dart
-const like = 'sample';
+
+// Change colour scheme
+TinyAvatar(
+    baseString: 'c418',
+    dimension: 150,
+    colourScheme: TinyAvatarColourScheme.heated,
+),
+
+// Circular option
+TinyAvatar(
+    baseString: 'Mary',
+    dimension: 150,
+    circular: true,
+),
+
+// Custom border radius
+TinyAvatar(
+    baseString: 'Elton John',
+    dimension: 150,
+    colourScheme: TinyAvatarColourScheme.seascape,
+    borderRadius: 30,
+),
+
+// Custom colour scheme
+TinyAvatar(
+    baseString: 'Superman',
+    dimension: 150,
+    colourScheme: TinyAvatarColourScheme.summer,
+    customColours: const [
+        Colors.red,
+        Colors.orange,
+        Colors.orangeAccent,
+        Colors.yellow
+    ],
+)
+
 ```
+
+![image](https://i.imgur.com/YkxhsvA.png)
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+Github: https://github.com/PeterTheSalmon/tiny_avatar
+
+Want something added? Open an issue or pull request!
