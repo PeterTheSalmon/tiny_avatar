@@ -1,4 +1,4 @@
-A simple way to generate and display pseudo-random avatars for your users. Inspired by https://www.tinygraphs.com/
+A simple way to generate and display pseudo-random avatars for your users. Inspired by tinygraphs.com
 
 ## Getting started
 
