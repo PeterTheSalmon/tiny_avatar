@@ -1,6 +1,6 @@
 name: tiny_avatar
-description: Simple, generated avatars for your Flutter app. Inspired https://www.tinygraphs.com
-version: 0.0.1
+description: Simple, generated avatars for your Flutter app. Inspired by tinygraphs.com
+version: 0.0.2
 homepage: https://github.com/PeterTheSalmon/tiny_avatar
 
 environment:
