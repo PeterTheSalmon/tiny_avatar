@@ -11,7 +11,7 @@ class TinyAvatar extends StatelessWidget {
   final String baseString;
 
   /// The colour scheme of the avatar.
-  final TinyGraphColourScheme colourScheme;
+  final TinyAvatarColourScheme colourScheme;
 
   /// Supplies the avatar with a custom custom set of colours. If this is not null, the `colourScheme` will be ignored.
   ///
@@ -24,6 +24,8 @@ class TinyAvatar extends StatelessWidget {
   final List<Color>? customColours;
 
   /// The clip of the avatar. Defaults to `Clip.antiAlias`.
+  ///
+  /// NOTE: settings this to `Clip.none` will cause the avatar to be drawn as a square regardless of other parameters.
   final Clip clip;
 
   /// The width and height of the avatar
@@ -38,7 +40,7 @@ class TinyAvatar extends StatelessWidget {
   const TinyAvatar({
     super.key,
     required this.baseString,
-    this.colourScheme = TinyGraphColourScheme.froggy,
+    this.colourScheme = TinyAvatarColourScheme.froggy,
     this.customColours,
     this.clip = Clip.antiAlias,
     required this.dimension,
@@ -169,7 +171,7 @@ class TinyAvatar extends StatelessWidget {
   }
 }
 
-enum TinyGraphColourScheme {
+enum TinyAvatarColourScheme {
   froggy(
     colours: [
       Color.fromARGB(255, 83, 208, 66),
@@ -214,7 +216,7 @@ enum TinyGraphColourScheme {
   /// Colours are in order of prevalence in the final image
   final List<Color> colours;
 
-  const TinyGraphColourScheme({
+  const TinyAvatarColourScheme({
     required this.colours,
   });
 }
