@@ -10,7 +10,7 @@ Import it into your project:
 ```dart
 import 'package:tiny_avatar/tiny_avatar.dart';
 ```
-
+---
 ## Features
 
 - Generate unique avatars from a single string
@@ -18,6 +18,7 @@ import 'package:tiny_avatar/tiny_avatar.dart';
 - Avatars are consistent - the same string always leads to the same result
 - Complete documentation
 
+---
 ## Usage
 
 ```dart
@@ -29,6 +30,7 @@ TinyAvatar(
 
 ![image](https://i.imgur.com/Mga9jmv.png)
 
+---
 
 ## Customization
 
@@ -72,6 +74,8 @@ TinyAvatar(
 ```
 
 ![image](https://i.imgur.com/YkxhsvA.png)
+
+---
 
 ## Additional information
 
