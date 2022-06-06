@@ -1,3 +1,7 @@
+## 0.0.2+1
+
+- Add supported platforms
+
 ## 0.0.2
 
 - Typo correction
