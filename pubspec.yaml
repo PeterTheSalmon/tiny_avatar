@@ -1,6 +1,6 @@
 name: tiny_avatar
 description: Simple, generated avatars for your Flutter app. Inspired by tinygraphs.com
-version: 0.0.2+1
+version: 0.0.3
 homepage: https://github.com/PeterTheSalmon/tiny_avatar
 license: MIT
 
