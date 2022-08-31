@@ -214,7 +214,16 @@ enum TinyAvatarColourScheme {
       Color.fromARGB(255, 234, 240, 255),
       Color.fromARGB(255, 120, 92, 242),
     ],
-  );
+  ),
+  fruity(
+    colours: [
+      Color.fromARGB(255, 255, 122, 13),
+      Color.fromARGB(255, 255, 151, 82),
+      Color.fromARGB(255, 255, 248, 239),
+      Color.fromARGB(255, 255, 98, 0),
+    ],
+  ),
+  ;
 
   /// Colours are in order of prevalence in the final image
   final List<Color> colours;
